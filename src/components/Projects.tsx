@@ -2,7 +2,7 @@ import Link from "next/link";
 import ProjectCard from "./ui/ProjectCard";
 import SectionTitle from "./ui/SectionTitle";
 
-import { watchdogBanner, hogBanner, hwhqBanner } from "@/assets";
+import { watchdogBanner, hogBanner, spamBanner } from "@/assets";
 import { buttonVariants } from "./ui/Button";
 
 const Projects = () => {
@@ -40,19 +40,19 @@ const Projects = () => {
           ]}
         />
         <ProjectCard
-          title="HackerWatch HQ"
-          scope="Web Development + Security"
-          description="Unlinked hiring process fun and easier important information that a hiring manager actually need without wasting so much time."
-          image={hwhqBanner}
+          title="Spamwarden API"
+          scope="AI/ML + Development"
+          description="A Containerized Flask Server to host a lightweight ML model to detect spam efficiently, avoiding the need for bulky LLMs by training on specific datasets."
+          image={spamBanner}
           imageAlt="Unlinked banner"
-          liveLink="https://www.behance.net/gallery/152416557/Website-for-hiring-developers-Hackathon-Winner"
-          technologies={["UI Design", "UX Design", "Figma"]}
+          liveLink="https://github.com/NotSooShariff/spamwarden-api?tab=readme-ov-file"
+          technologies={["Machine Learning","Flask", "Docker"]}
         />
       </div>
       <div className="mt-6 flex items-center gap-5">
         <div className="grow border-t-2 border-muted-1 border-dashed"></div>
         <Link
-          href="https://github.com/NotSooShariff/?tab=repositories"
+          href="https://github.com/NotSooShariff/?tab=repositories  "
           className={buttonVariants({ variant: "outline", size: "default" })}
         >
           See all projects

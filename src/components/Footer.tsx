@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Cloud, Linkedin, Mail } from "lucide-react";
 import { buttonVariants } from "./ui/Button";
 
 type footerLinkType = {
@@ -20,6 +20,11 @@ const footerLinks: footerLinksType = [
     href: "https://linkedin.com/in/owais-shariff",
     icon: <Linkedin size={20} strokeWidth={1.5} />,
     ariaLabel: "LinkedIn Icon",
+  },
+  {
+    href: "https://tryhackme.com/p/NotSooShariff",
+    icon: <Cloud size={20} strokeWidth={1.5} />,
+    ariaLabel: "TryHackMe Icon",
   },
   {
     href: "mailto:owais.ahmed.shariff@gmail.com",

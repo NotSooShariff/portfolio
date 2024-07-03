@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, Github, Twitter } from "lucide-react";
+import { Menu, X, Github, Cloud } from "lucide-react";
 import Badge from "./ui/Badge";
 import { Button, buttonVariants } from "./ui/Button";
 
@@ -69,12 +69,12 @@ const Navigation = () => {
           <Link
             rel="noopener noreferrer"
             target="_blank"
-            href=""
+            href="https://tryhackme.com/p/NotSooShariff"
             className={buttonVariants({ variant: "icon", size: "icon" })}
-            aria-label="Twitter Profile Link"
+            aria-label="TryHackMe Profile Link"
             onClick={closeMenu}
           >
-            <Twitter width={20} height={20} strokeWidth={1.5} />
+            <Cloud width={20} height={20} strokeWidth={1.5} />
           </Link>
         </div>
         <ul className="flex flex-col lg:flex-row gap-6 text-lg lg:ml-auto">

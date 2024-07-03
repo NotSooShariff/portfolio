@@ -22,7 +22,8 @@ const Contact = () => {
         <div className="flex z-0 gap-8">
           <Link
             className={buttonVariants({ variant: "accent", size: "default" })}
-            href="mailto:owais.ahmed.shariff@gmail.com"
+            href="https://wa.link/lal4e7"
+            target="_blank"
           >
             Say Hello
           </Link>
