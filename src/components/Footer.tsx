@@ -32,14 +32,14 @@ const Footer = () => {
   return (
     <footer className="flex flex-wrap gap-5  justify-between view-container items-center my-20">
       <div className="font-mono px-7 py-5 bg-muted-2 rounded-lg mx-auto md:mx-0">
-        <p className="">Built with love by Owais Shariff</p>
+        <p className="">Want to Steal this Website?</p>
         <Link
           href="https://github.com/NotSooShariff/portfolio"
           className="flex gap-2 items-center before:block relative before:absolute before:w-full w-fit mx-auto md:mx-0 before:h-[1px] before:-bottom-0.5 before:left-0 before:bg-muted-white-2 hover:before:scale-x-0 before:origin-left before:transition-transform"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Codebase on GitHub <ArrowUpRight size={20} strokeWidth={1.5} />
+          View Repository <ArrowUpRight size={20} strokeWidth={1.5} />
         </Link>
       </div>
       <div className="grid grid-cols-4 place-items-center mx-auto md:mx-0 md:grid-cols-2 gap-4">

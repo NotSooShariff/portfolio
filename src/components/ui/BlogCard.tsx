@@ -10,7 +10,7 @@ interface BlogCardProps extends React.HTMLAttributes<HTMLDivElement> {
 const BlogCard = ({ children, className, slug }: BlogCardProps) => {
   return (
     <Link
-      href={`https://blog.osh.fyi/${slug}`}
+      href={`${slug}`}
       rel="noopener noreferrer"
       target="_blank"
       className={`flex justify-between items-center group py-4 md:py-6 lg:py-8 border-b border-muted-1 hover:px-4 md:hover:px-6 lg:hover:px-8 hover:bg-muted-1 hover:border-primary-light transition-all ${className}`}

@@ -4,21 +4,17 @@ import SectionTitle from "./ui/SectionTitle";
 const Blogs = () => {
   return (
     <section className="view-container my-24">
-      <SectionTitle badges={["web dev", "machine learning", "open source"]}>
+      <SectionTitle badges={["Privacy", "Security", "CTFs"]}>
         Some noteworthy blogs
       </SectionTitle>
       <div className="">
-        <BlogCard slug="code-formatting-tutorial-eslint-prettier-husky-lint-staged-reactjs">
-          Seamless Code Formatting: Setup ESLint, Prettier, Husky & Lint-staged
-          for ReactJS
+        <BlogCard slug="https://medium.com/@notsooshariff/a-beginners-handbook-to-online-privacy-and-defunding-evil-corporations-3efa64908ba7">
+        A Beginner&apos;s Handbook to Online Privacy and Defunding Evil Corporations 
         </BlogCard>
-        <BlogCard slug="getting-started-with-numpy-arrays">
-          Getting started with NumPy & NumPy Arrays
+        <BlogCard slug="https://medium.com/@notsooshariff/the-footprinting-reconnaissance-bible-a-detailed-guide-for-ceh-v12-addda3d5f570">
+        The Footprinting and Reconnaisance Bible
         </BlogCard>
-        <BlogCard slug="ux-design-laws-every-developer-should-know">
-          UX Design laws every developer should know
-        </BlogCard>
-        <BlogCard slug="">See all blogs</BlogCard>
+        <BlogCard slug="https://medium.com/@notsooshariff">See all blogs</BlogCard>
       </div>
     </section>
   );
