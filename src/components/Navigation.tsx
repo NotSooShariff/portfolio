@@ -93,7 +93,7 @@ const Navigation = () => {
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
               onClick={closeMenu}
             >
-              <span className="text-primary">2.</span>Work
+              <span className="text-primary">2.</span>Delusions
             </Link>
           </li>
           <li>
@@ -102,16 +102,25 @@ const Navigation = () => {
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
               onClick={closeMenu}
             >
-              <span className="text-primary">3.</span>About
+              <span className="text-primary">3.</span>Research
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
+              onClick={closeMenu}
+            >
+              <span className="text-primary">4.</span>Experience
             </Link>
           </li>
         </ul>
         <Link
-          href="mailto:owais.ahmed.shariff@gmail.com"
+          href="/resume"
           className={`${buttonVariants({ variant: "outline" })} lg:ml-6`}
           onClick={closeMenu}
         >
-          Say Hello
+          Resume
         </Link>
       </div>
     </nav>

@@ -15,9 +15,9 @@ const Header = () => {
         </span>
       </h1>
       <p className="max-w-xl text-base lg:text-xl text-muted-foreground mt-10 leading-normal">
-        Passionate freelance Security Researcher and designer, crafting functional
-        websites for startups. Dedicated open-source contributor and community
-        builder.
+        Passionate Ethical Hacker & Security Researcher who likes
+        to explore new technologies in his free time. When I'm not yapping
+        on Medium, you'll find me cooking up my next Big SaaS Idea.
       </p>
       <div className="flex gap-5 mt-10">
         <Link
