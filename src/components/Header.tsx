@@ -19,10 +19,10 @@ const Header = () => {
         to explore new technologies in his free time. When I'm not yapping
         on Medium, you'll find me cooking up my next Big SaaS Idea.
       </p>
-      <div className="flex gap-5 mt-10">
+      <div className="flex flex-col md:flex-row gap-5 mt-10">
         <Link
           href="/resume.pdf"
-          className={`${buttonVariants({})} flex items-center`}
+          className={`${buttonVariants({})} flex items-center justify-center`}
         >
           <FaRegFilePdf className="mr-3"/> View Resume 
         </Link>
