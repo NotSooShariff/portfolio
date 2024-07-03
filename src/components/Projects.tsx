@@ -2,7 +2,7 @@ import Link from "next/link";
 import ProjectCard from "./ui/ProjectCard";
 import SectionTitle from "./ui/SectionTitle";
 
-import { watchdogBanner, hogBanner, unlinkedBanner } from "@/assets";
+import { watchdogBanner, hogBanner, hwhqBanner } from "@/assets";
 import { buttonVariants } from "./ui/Button";
 
 const Projects = () => {
@@ -31,8 +31,7 @@ const Projects = () => {
           description="An open-source secrets scanning engine with an add-on browser extension that allows you to scan for leaked secrets in real-time from pre-deployment to post-deployment."
           image={watchdogBanner}
           imageAlt="Ciphered banner"
-          sourceLink="https://github.com/"
-          liveLink="https://"
+          sourceLink="https://github.com/NotSooShariff/secrets-scanning-engine"
           technologies={[
             "Next.js + Electron",
             "TailwindCSS",
@@ -41,10 +40,10 @@ const Projects = () => {
           ]}
         />
         <ProjectCard
-          title="Unlinked"
-          scope="Design (Web)"
+          title="HackerWatch HQ"
+          scope="Web Development + Security"
           description="Unlinked hiring process fun and easier important information that a hiring manager actually need without wasting so much time."
-          image={unlinkedBanner}
+          image={hwhqBanner}
           imageAlt="Unlinked banner"
           liveLink="https://www.behance.net/gallery/152416557/Website-for-hiring-developers-Hackathon-Winner"
           technologies={["UI Design", "UX Design", "Figma"]}
@@ -53,7 +52,7 @@ const Projects = () => {
       <div className="mt-6 flex items-center gap-5">
         <div className="grow border-t-2 border-muted-1 border-dashed"></div>
         <Link
-          href="/work"
+          href="https://github.com/NotSooShariff/?tab=repositories"
           className={buttonVariants({ variant: "outline", size: "default" })}
         >
           See all projects
