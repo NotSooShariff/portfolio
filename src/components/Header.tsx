@@ -11,7 +11,7 @@ const Header = () => {
       <h1 className="font-semibold text-[34px] md:text-5xl lg:text-[66px] flex flex-col mt-5 leading-snug">
         <span className="text-muted-white-2">I help uncover vulnerabilities</span>
         <span className="text-muted-white-1 md:mt-2">
-          and build security solutions
+          and make awesome products.
         </span>
       </h1>
       <p className="max-w-xl text-base lg:text-xl text-muted-foreground mt-10 leading-normal">
