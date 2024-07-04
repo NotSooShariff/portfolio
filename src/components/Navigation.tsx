@@ -116,7 +116,7 @@ const Navigation = () => {
           </li>
         </ul>
         <Link
-          href="/resume"
+          href="/resume.pdf"
           className={`${buttonVariants({ variant: "outline" })} lg:ml-6`}
           onClick={closeMenu}
         >
