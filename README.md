@@ -2,7 +2,7 @@
 
 This is my personal portfolio website, rebuilt using Next.js for better performance and modern web practices. The project showcases my work, skills, and experiences in web development and cybersecurity.
 
-## Features
+## Technologies
 
 - **Next.js**: Utilizes the latest Next.js features for server-side rendering and static site generation.
 - **Tailwind CSS**: Styled with Tailwind CSS for efficient, responsive, and customizable design.
@@ -32,12 +32,6 @@ This is my personal portfolio website, rebuilt using Next.js for better performa
 
 - **/public**: Static assets such as images and fonts.
 - **/src**: Main source code, including pages, components, and styles.
-
-## Technologies Used
-
-- **Next.js**: React framework for building server-rendered applications.
-- **Tailwind CSS**: Utility-first CSS framework.
-- **TypeScript**: Superset of JavaScript that adds static types.
 
 ## License
 
