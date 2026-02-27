@@ -38,3 +38,22 @@
     @apply w-[1100px] max-2xl:w-[1100px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-full px-5;
   }
 }
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker {
+  animation: ticker 35s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes hint-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.15; }
+}
+.hint-blink {
+  animation: hint-blink 2s ease-in-out infinite;
+}

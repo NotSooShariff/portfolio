@@ -89,29 +89,29 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              href="/work"
+              href="/experience"
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
               onClick={closeMenu}
             >
-              <span className="text-primary">2.</span>Delusions
+              <span className="text-primary">2.</span>Missions
             </Link>
           </li>
           <li>
             <Link
-              href="/about"
+              href="/research"
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
               onClick={closeMenu}
             >
-              <span className="text-primary">3.</span>Research
+              <span className="text-primary">3.</span>Labs
             </Link>
           </li>
           <li>
             <Link
-              href="/about"
+              href="/skills"
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
               onClick={closeMenu}
             >
-              <span className="text-primary">4.</span>Experience
+              <span className="text-primary">4.</span>Arsenal
             </Link>
           </li>
         </ul>

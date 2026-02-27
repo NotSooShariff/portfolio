@@ -18,21 +18,21 @@ const generalSans = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Owais Shariff • Security Researcher & Developer",
+    title: "Owais Shariff • Cybersecurity Consultant",
     description:
-        "Owais Shariff is a Security Researcher and Developer.",
+        "Owais Shariff is a Cybersecurity Consultant and Security Researcher at Optiv Security.",
     metadataBase: new URL("https://osh.fyi"),
     openGraph: {
-        title: "Owais Shariff • Security Maverick",
+        title: "Owais Shariff • Cybersecurity Consultant",
         description:
-            "Security Researcher, Developer, and ML enthusiast.",
+            "Cybersecurity Consultant and Security Researcher at Optiv Security.",
         url: "https://osh.fyi",
         siteName: "Owais Shariff Portfolio Website",
         images: {
             url: "/opengraph-image.png",
             width: 1920,
             height: 960,
-            alt: "Owais Shariff: Security Researcher & Developer",
+            alt: "Owais Shariff: Cybersecurity Consultant",
         },
     },
 };

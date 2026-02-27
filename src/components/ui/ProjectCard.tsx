@@ -8,8 +8,9 @@ interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   scope: string;
   description: string;
-  image: StaticImageData;
-  imageAlt: string;
+  image?: StaticImageData | string | null;
+  imageAlt?: string;
+  placeholder?: React.ReactNode;
   sourceLink?: string;
   liveLink?: string;
   technologies: string[];
@@ -22,6 +23,7 @@ const ProjectCard = ({
   description,
   image,
   imageAlt,
+  placeholder,
   sourceLink,
   liveLink,
   technologies,
@@ -31,8 +33,30 @@ const ProjectCard = ({
     <div
       className={`flex flex-col md:flex-row gap-5 p-4 md:p-7 border-2 border-muted-1 border-dashed rounded-lg ${className}`}
     >
-      <div className="flex-1">
-        <Image src={image} alt={imageAlt} className="rounded w-full" />
+      <div className="flex-1 min-h-[200px] md:min-h-0">
+        {image ? (
+          typeof image === "string" ? (
+            <Image
+              src={image}
+              alt={imageAlt ?? title}
+              width={600}
+              height={400}
+              className="rounded w-full object-cover"
+            />
+          ) : (
+            <Image
+              src={image}
+              alt={imageAlt ?? title}
+              className="rounded w-full object-cover"
+            />
+          )
+        ) : placeholder ? (
+          <div className="rounded w-full h-full min-h-[200px]">{placeholder}</div>
+        ) : (
+          <div className="rounded w-full h-full min-h-[200px] bg-muted-2 flex items-center justify-center">
+            <span className="font-mono text-muted-foreground text-sm">no preview</span>
+          </div>
+        )}
       </div>
       <div className="flex-1">
         <div className="flex justify-between">
@@ -64,7 +88,7 @@ const ProjectCard = ({
             )}
           </div>
         </div>
-        <p className="uppercase tracking-wider font-mono text-muted-white-2">
+        <p className="uppercase tracking-wider font-mono text-muted-white-2 text-sm">
           {scope}
         </p>
         <p className="text-base md:text-xl leading-normal mt-5">
